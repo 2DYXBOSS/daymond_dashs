@@ -1,0 +1,329 @@
+<!-- Sidebar -->
+<div class="sidebar" style="max-width: 300px;">
+
+    <div style="height: 100%;display: flex;flex-direction: column;">
+
+
+        <div class="sidebar-logo">
+            <!-- Logo Header -->
+            <div class="logo-header" style="width: 100%;">
+                <a routerLink="/dashboard" class="logo border-bottom" style="margin: 0 auto;">
+                    <!-- <img src="assets/img/logo.png" alt="navbar brand" class="navbar-brand" height="40" /> -->
+                    <div class="logo-name">
+                        <img src="assets/img/logo-day.png" height="70"
+                            style="margin-left: 15px;padding-bottom: 10px;" />
+                    </div>
+                </a>
+                
+            </div>
+            <!-- End Logo Header -->
+        </div>
+        <div style="display: flex;padding-left: 30px">
+
+            <div style="width: 70px;height: 80vh;background-color: #FFEEF0;border-radius: 50px;margin-top: 20px;display: flex;align-items: center;justify-content: start;flex-direction: column;padding-top: 30px;gap: 30px;">
+                <div class="men-st" >
+                    <img src="assets/img/daydash2.png" height="25"
+                    />
+                </div>
+                <div class="men-st activated" >
+                    <img src="assets/img/daydash3.png" height="25"
+                    />
+                </div>
+                <div class="men-st">
+                    <img src="assets/img/daydash4.png" height="25"
+                    />
+                </div>
+                <div class="men-st" >
+                    <img src="assets/img/daydash5.png" height="25"
+                    />
+                </div>
+                <div class="men-st">
+                    <img src="assets/img/daydash1.png" height="25"
+                     />
+                </div>
+            </div>
+            <div class="sidebar-wrapper scrollbar scrollbar-inner"
+                style="min-width: 200px !important;margin-right: 10px !important;box-shadow: none;">
+                <div class="sidebar-content">
+                    <ul class="nav nav-secondary">
+                        <li style="padding-left: 0;margin-left: 10px;">
+                            <a style="margin-left: 0;padding-left: 0;color: black;font-weight: bolder;">
+
+                                <p class="border-bottom">Distribution</p>
+
+                            </a>
+                        </li>
+                        
+                        <li style="padding-left: 0;margin-left: 2px;">
+                            <a style="display: flex;justify-content: flex-start;border: none;padding-left: 0;margin-left: 0;" class="nav-item " *ngIf="
+                
+                currentRoute != '/' &&
+                currentRoute != '/orders/list_call' &&
+    
+                currentRoute != '/orders/details_coord' && 
+    
+                currentRoute != '/orders/list_cord' 
+                ">
+
+
+                                <div class="dropdown" style="padding-left: 0;margin-left: 0;">
+                                    <button class="btn btn-default dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false"
+                                        style="border: none;font-weight: bolder;padding-left: 0;margin-left: 0;">
+                                        <img src="assets/img/cart.png" height="20"
+                                            style="margin-right: 15px;margin-left: 5px;" />
+
+                                        <span style="margin-left: 1px;color: #6a6a6a;">Commandes</span>
+                                    </button>
+                                    <ul class="dropdown-menu " role="menu"
+                                        style="width: 235px;background-color: rgb(255, 245, 247);">
+                                        <li
+                                            style="display: flex;align-items: center;justify-content: center;gap: 20px;padding-left: 10px;padding-left: 0;margin-left: 0;">
+                                            <img src="assets/img/profile.png" height="20"
+                                                style="margin-left: 10px;" />
+                                            <!-- <a class="dropdown-item" routerLink="/orders">Call center</a> -->
+
+                                            <a class="dropdown-item" routerLink="/orders/list_call">Call center</a>
+                                        </li>
+
+
+                                        <li style="display: flex;align-items: center;justify-content: center;gap: 20px;padding-left: 10px;padding-left: 0;margin-left: 0;"
+                                            routerLink="/orders/list_coord/">
+                                            <img src="assets/img/parametre.png" height="20"
+                                                style="margin-left: 10px;" />
+                                            <a class="dropdown-item" routerLink="/list_cord/">Coordinateur</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li style="padding-left: 0;margin-left: 2px;">
+                            <a style="display: flex;justify-content: flex-start;padding-left: 0;margin-left: 0;" class="nav-item active"
+                               *ngIf="
+                currentRoute === '/' || 
+                currentRoute === '/orders/list_call' || 
+                currentRoute === '/orders/details_coord' ||  
+                currentRoute === '/orders/list_cord' 
+            
+                
+                ">
+
+
+                                <div class="dropdown" style="padding-left: 0;margin-left: 0;">
+                                    <button class="btn btn-default dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="border: none;padding-left: 0;margin-left: 0;">
+                                        <img src="assets/img/cart.png" height="20"
+                                            style="margin-right: 15px;margin-left: 5px;" />
+                                        <span style="margin-left: 1px;color: #6a6a6a;">Commandes</span>
+                                    </button>
+                                    <ul class="dropdown-menu " role="menu"
+                                        style="width: 235px;background-color: rgb(255, 245, 247);">
+                                        <li
+                                            style="display: flex;align-items: center;justify-content: center;gap: 20px;padding-left: 10px;padding-left: 0;margin-left: 0;">
+                                            <img src="assets/img/profile.png" height="20"
+                                                style="margin-left: 10px;" />
+                                            <!-- <a class="dropdown-item" routerLink="/orders">Call center</a> -->
+
+                                            <a class="dropdown-item" routerLink="/orders/list_call">Call center</a>
+                                        </li>
+
+
+                                        <li style="display: flex;align-items: center;justify-content: center;gap: 20px;padding-left: 10px;padding-left: 0;margin-left: 0;"
+                                            routerLink="/orders/list_cord/">
+                                            <img src="assets/img/parametre.png" height="20"
+                                                style="margin-left: 10px;" />
+                                            <a class="dropdown-item" routerLink="/orders/list_cord/">Coordinateur</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item active" style="padding-left: 0;margin-left: 10px;" *ngIf="
+            currentRoute === '/produits'
+            
+            ">
+                            <a routerLink="/produits/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/product.png" height="20" style="margin-right: 15px" />
+                                <p>Produits</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" *ngIf="
+                currentRoute != '/produits'
+            
+                
+                ">
+                            <a routerLink="/produits/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/product.png" height="20" style="margin-right: 15px" />
+                                <p>Produits</p>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item active" style="padding-left: 0;margin-left: 10px;" *ngIf="
+        
+            currentRoute === '/paiemennt' 
+            ">
+                            <a routerLink="/paiemennt/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/paye.png" height="20" style="margin-right: 15px" />
+                                <p>Paiements</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" *ngIf="
+            
+            currentRoute != '/paiemennt' 
+            ">
+                            <a routerLink="/paiemennt/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/paye.png" height="20" style="margin-right: 15px" />
+                                <p>Paiements</p>
+                            </a>
+                        </li>
+
+                   
+
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" >
+                            <a routerLink="/accountant/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/comptable.png" height="20" style="margin-right: 15px" />
+                                <p>Comptabilité</p>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" >
+                            <a routerLink="/accountant/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/comptable.png" height="20" style="margin-right: 15px" />
+                                <p>7 Etoiles</p>
+                            </a>
+                        
+
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;">
+                            <a routerLink="/accountant/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/comptable.png" height="20" style="margin-right: 15px" />
+                                <p>Rappel</p>
+                            </a>
+                        </li>
+                        <li style="padding-left: 0;margin-left: 10px;">
+                            <a style="margin-left: 0;padding-left: 0;color: black;font-weight: bolder;">
+
+                                <p class="border-bottom">Options</p>
+
+                            </a>
+                        </li>
+                        <li class="nav-item active" style="padding-left: 0;margin-left: 10px;" *ngIf="
+        
+            currentRoute === '/reglage' 
+            ">
+                            <a routerLink="/reglage/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/parametre.png" height="20" style="margin-right: 15px" />
+                                <p>Reglage</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" *ngIf="
+            
+            currentRoute != '/reglage' 
+            ">
+                            <a routerLink="/reglage/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/parametre.png" height="20" style="margin-right: 15px" />
+                                <p>Reglage</p>
+                            </a>
+                        </li>
+                        <li class="nav-item active" style="padding-left: 0;margin-left: 10px;" *ngIf="
+        
+            currentRoute === '/annonces/actualite' || 
+            currentRoute === '/annonces/create-annonce' || 
+            currentRoute === '/annonces/list-annonces' || 
+            currentRoute === '/annonces' 
+            ">
+                            <a routerLink="/annonces/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/parametre.png" height="20" style="margin-right: 15px" />
+                                <p>annonces</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" *ngIf="
+            
+            currentRoute != '/annonces/actualite' &&
+            currentRoute != '/annonces/create-annonce' &&
+            currentRoute != '/annonces/list-annonces' &&
+            currentRoute != '/annonces' 
+            ">
+                            <a routerLink="/annonces/" style="padding-left: 0;margin-left: 0;">
+                                <img src="assets/img/parametre.png" height="20" style="margin-right: 15px" />
+                                <p>annonces</p>
+                            </a>
+                        </li>
+
+                                    
+                      
+
+
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" *ngIf="
+                        currentRoute != '/accountant' &&
+                        currentRoute != '/accountant/solde' &&
+                        currentRoute != '/accountant/recharge' 
+                        ">
+                                        <a routerLink="/accountant/" style="padding-left: 0;margin-left: 0;">
+                                            <img src="assets/img/comptable.png" height="20" style="margin-right: 15px" />
+                                            <p class="text-dark">Les utilisateurs </p>
+                                        </a>
+                                    </li>
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" *ngIf="
+                        currentRoute != '/accountant' &&
+                        currentRoute != '/accountant/solde' &&
+                        currentRoute != '/accountant/recharge' 
+                        ">
+                                        <a routerLink="/accountant/" style="padding-left: 0;margin-left: 0;">
+                                            <img src="assets/img/comptable.png" height="20" style="margin-right: 15px" />
+                                            <p class="text-dark">statistique</p>
+                                        </a>
+                                    </li>
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" *ngIf="
+                        currentRoute != '/accountant' &&
+                        currentRoute != '/accountant/solde' &&
+                        currentRoute != '/accountant/recharge' 
+                        ">
+                                        <a routerLink="/accountant/" style="padding-left: 0;margin-left: 0;">
+                                            <img src="assets/img/comptable.png" height="20" style="margin-right: 15px" />
+                                            <p class="text-dark">Historique</p>
+                                        </a>
+                                    </li>
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" *ngIf="
+                        currentRoute != '/accountant' &&
+                        currentRoute != '/accountant/solde' &&
+                        currentRoute != '/accountant/recharge' 
+                        ">
+                                        <a routerLink="/accountant/" style="padding-left: 0;margin-left: 0;">
+                                            <img src="assets/img/comptable.png" height="20" style="margin-right: 15px" />
+                                            <p class="text-dark">Les supprimes</p>
+                                        </a>
+                                    </li>
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" *ngIf="
+                        currentRoute != '/accountant' &&
+                        currentRoute != '/accountant/solde' &&
+                        currentRoute != '/accountant/recharge' 
+                        ">
+                                        <a routerLink="/accountant/" style="padding-left: 0;margin-left: 0;">
+                                            <img src="assets/img/comptable.png" height="20" style="margin-right: 15px" />
+                                            <p class="text-dark">les produits</p>
+                                        </a>
+                                    </li>
+                        <li class="nav-item" style="padding-left: 0;margin-left: 10px;" *ngIf="
+                        currentRoute != '/accountant' &&
+                        currentRoute != '/accountant/solde' &&
+                        currentRoute != '/accountant/recharge' 
+                        ">
+                                        <a routerLink="/accountant/" style="padding-left: 0;margin-left: 0;">
+                                            <img src="assets/img/comptable.png" height="20" style="margin-right: 15px" />
+                                            <p class="text-dark">Base Données </p>
+                                        </a>
+                                    </li>
+                    
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Sidebar -->
