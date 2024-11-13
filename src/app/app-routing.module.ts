@@ -1,31 +1,32 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PaymentComponent } from './views/payment/payment.component';
-import { SettingsComponent } from './views/settings/settings.component';
-import { MessageComponent } from './views/message/message.component';
-import { ProductsComponent } from './views/products/products.component';
+import { PaymentComponent } from './views/Distribution/payment/payment.component';
+import { SettingsComponent } from './views/Distribution/settings/settings.component';
+import { MessageComponent } from './views/Distribution/message/message.component';
+import { ProductsComponent } from './views/Distribution/products/products.component';
 import { BadgeorderComponent } from './views/Recruiters/badgeorder/badgeorder.component';
+import { PaiementsComponent } from './views/Recruiters/paiements/paiements.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./views/order/order.module').then(m => m.OrderModule),
+    loadChildren: () => import('./views/Distribution/order/order.module').then(m => m.OrderModule),
 
   },
   {
     path: 'orders',
-    loadChildren: () => import('./views/order/order.module').then(m => m.OrderModule),
+    loadChildren: () => import('./views/Distribution/order/order.module').then(m => m.OrderModule),
 
   },
   {
     path: 'users',
-    loadChildren: () => import('./views/users/users.module').then(m => m.UsersModule),
+    loadChildren: () => import('./views/Distribution/users/users.module').then(m => m.UsersModule),
 
   },
   {
     path: 'annonces',
-    loadChildren: () => import('./views/announcements/announcements.module').then(m => m.AnnouncementsModule),
+    loadChildren: () => import('./views/Distribution/announcements/announcements.module').then(m => m.AnnouncementsModule),
 
   },
   {
@@ -53,6 +54,10 @@ const routes: Routes = [
   {
     path: 'paiemennt',
     component: PaymentComponent
+  },
+  {
+    path: 'paiemennt-recruteur',
+    component: PaiementsComponent
   },
  
   {

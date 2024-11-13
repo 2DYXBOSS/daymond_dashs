@@ -1,4 +1,8 @@
-
+div::-webkit-scrollbar {
+ 
+    display: none!important;
+ 
+}
 p,span,a{
     color: black!important;
 }
@@ -51,7 +55,7 @@ p,span,a{
 }
 
 .activated{
-    width: 30px;height: 30px;border-radius: 7px;display: flex;align-items: center;justify-content: center;background-color: white;border: 1px solid #FFA11E;padding: 20px
+    width: 30px;height: 30px;border-radius: 8px!important;display: flex;align-items: center;justify-content: center;background-color: white;border: 1px solid #FFA11E;padding: 20px
 }
 
 

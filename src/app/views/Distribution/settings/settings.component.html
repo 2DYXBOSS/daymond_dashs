@@ -1,0 +1,144 @@
+<div class="mt-2 " style="display: flex;gap: 20px;background-color: none;">
+    <div class="container-fluid " style="min-width: 200px;box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);" id="effacesq">
+        <div style="height: 40px;width: 100%;border-bottom: 1px solid gainsboro;">
+            <p style="text-align: center;padding-top: 10px;">Réglages</p>
+        </div>
+
+        <div
+            style="width: 100%;height: 35px;background-color: #FCF5F5;border-radius: 3px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);margin-top: 10px;display: flex;align-items: center;justify-content: center;padding-top: 15px;">
+            <p style="font-weight: bolder;font-size: 0.9rem;color: #FFA11E;">Ajouter une couverture </p>
+        </div>
+        <div
+            style="width: 100%;height: 35px;background-color: #F7F6FE;border-radius: 3px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);margin-top: 10px;display: flex;align-items: center;justify-content: center;padding-top: 15px;">
+            <p style="font-weight: bolder;font-size: 0.9rem;">Changez l’icone </p>
+        </div>
+        <div
+            style="width: 100%;height: 35px;background-color: #F7F6FE;border-radius: 3px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);margin-top: 10px;display: flex;align-items: center;justify-content: center;padding-top: 15px;">
+            <p style="font-weight: bolder;font-size: 0.9rem;">Ajouter un vendeur</p>
+        </div>
+        <div
+            style="width: 100%;height: 35px;background-color: #F7F6FE;border-radius: 3px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);margin-top: 10px;display: flex;align-items: center;justify-content: center;padding-top: 15px;">
+            <p style="font-weight: bolder;font-size: 0.9rem;">Operations </p>
+        </div>
+        <div
+            style="width: 100%;height: 35px;background-color: #F7F6FE;border-radius: 3px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);margin-top: 10px;display: flex;align-items: center;justify-content: center;padding-top: 15px;">
+            <p style="font-weight: bolder;font-size: 0.9rem;">Centre d’aide </p>
+        </div>
+
+
+    </div>
+    <div class="p-3" style="width: 100%;background-color: white">
+        <!-- Button Group -->
+
+        <div class="d-flex justify-content-between align-items-center w-100">
+
+            <div class="d-flex gap-3 align-items-start justify-content-between w-100" >
+
+                <p class="text-dark">Ajouter une couverture</p>
+
+                <a data-bs-toggle="modal" data-bs-target="#infoModal">
+                    <img src="assets/img/adfgh.png" 
+                            style="width: 25px;height: 25px;" />
+                </a>
+            </div>
+
+
+
+        </div>
+
+        <div class="d-flex gap-3 ">
+            <div class="block-st" style="height: 300px; flex: 1;">
+                <img src="assets/img/caer2.png" 
+                            style="width: 100%;height: 100%;" />
+            </div>
+           
+        </div>
+        <div class="d-flex gap-3 mt-3">
+            <div class="block-st" style="height: 200px; flex: 1;">
+               <img src="assets/img/caer1.png" 
+                            style="width: 100%;height: 100%;" />
+            </div>
+            <div class="block-st" style="height: 200px; flex: 1;">
+               <img src="assets/img/caer3.png" 
+                            style="width: 100%;height: 100%;" />
+            </div>
+        </div>
+        <div class="d-flex gap-3 mt-3">
+            <div class="block-st" style="height: 200px; flex: 1;">
+               <img src="assets/img/caer4.png" 
+                            style="width: 100%;height: 100%;" />
+            </div>
+            <div class="block-st" style="height: 200px; flex: 1;">
+               <img src="assets/img/caer5.png" 
+                            style="width: 100%;height: 100%;" />
+            </div>
+        </div>
+        <div class="d-flex gap-3 mt-3">
+            <div class="block-st" style="height: 200px; flex: 1;">
+               <img src="assets/img/caer3.png" 
+                            style="width: 100%;height: 100%;" />
+            </div>
+            <div class="block-st" style="height: 200px; flex: 1;">
+               <img src="assets/img/caer4.png" 
+                            style="width: 100%;height: 100%;" />
+            </div>
+        </div>
+        
+        
+            
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Modal d'Information -->
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" >
+        <div class="modal-content" >
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <span style="text-align: center;margin:  0 auto;color: black;">Ajouter une image</span>
+          <div class="modal-body" >
+            <!-- Header Section -->
+            
+            
+            <!-- Payment Information -->
+             
+            <label for="down-image" class="d-flex justify-content-center align-items-center text-center mb-4" style="border: 1px solid rgb(213, 213, 213);border-radius: 10px;padding: 10px;height: 159px;">
+
+                  <img src="assets/img/addimage.png" alt="User image" style="width: 30px; height: 30px;">
+                  
+            </label>
+            <input type="file" style="display: none;" name="" id="down-image">
+            <!-- Payment Form -->
+
+            <form style="display: flex;flex-direction: column;align-items: center;max-width: 600px;margin: 0 auto;">
+              <div class="mb-3" style="width: 100%;">
+
+                <div class="input-group form-control" style="background-color: white;">
+                  <input type="text" class="form-control" style="border: none;" id="paymentRef" placeholder="17 000">
+                  <button type="button" style="background-color: white;border: none;"><img src="assets/img/bx-chevron-down.png" alt="User image" style="width: 25px; height: 25px;background-color: white"></button>
+                </div>
+              </div>
+    
+              <div class="mb-3" style="width: 100%;">
+               
+                <div class="input-group form-control" style="background-color: white;margin: 0 auto;">
+                  <input type="text" class="form-control" style="border: none;" id="paymentRef" placeholder="Entrer la référence">
+                  <button class="btn btn-primary" type="button">Coller</button>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-warning w-auto " style="margin: auto;color: white;" routerLink="/message" data-bs-dismiss="modal" aria-label="Close">ENREGISTRER</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
